@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 40px auto;
+       padding: 10px;
+        width: 500px;
+        height: fit-content;
+        background-color: rgb(183, 183, 255);
+        border-radius: 10px;
+        box-shadow: 10px 10px 60px 2px rgb(40, 40, 40);
+        border: 1px solid gray;
+     
+
+    }
+    .first{
+        display: flex;
+    }
+    .second{
+        display: flex;
+    }
+    .third{
+        display: flex;
+    }
+    p{
+        width: 200px;
+        height: 30px;
+        position: relative;
+        top: 10px ;
+        left: 20px;
+    }
+    .container2{
+        margin: 40px auto;
+        width: 300px;
+        height: fit-content;
+    }
+    .btn{
+        position: relative;
+        top: 70px;
+        width: 100px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="first">
+        <h2>Name</h2>
+        <p id="name-tag"></p>
+      </div>
+      <div class="second">
+
+        <h2>Age</h2>
+        <p id="age-tag"></p>
+    </div>
+    <div class="third">
+         <h2>place</h2>
+         <p id="place-tag"></p>
+        </div>
+     </div>
+<div class="container2">
+     <h2>name:</h2>
+     <input id="ip-name" type="text">
+     <h2>Age:</h2>
+     <input id="ip-age" type="text">
+
+     <h2>place:</h2>
+     <input id="ip-place" type="text">
+     <button onclick="addtext()" class="btn">submit</button>
+    </div>
+<script>
+    function addtext(){
+document.getElementById("name-tag").innerHTML = document.getElementById("ip-name").value;
+document.getElementById("age-tag").innerHTML = document.getElementById("ip-age").value;
+document.getElementById("place-tag").innerHTML = document.getElementById("ip-place").value;
+    }
+</script>
+</body>
+</html>
